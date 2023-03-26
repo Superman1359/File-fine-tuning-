@@ -1,0 +1,15 @@
+{
+  "app": {
+    "emoji": "🏆",
+    "name": "OpenAI Fine-Tuner",
+    "title": "$t(app.emoji) $t(app.name)",
+    "subtitle": "Train your openAI Model",
+    "description": "$t(app.emoji) $t(app.name) — $t(app.subtitle)"
+  },
+  "pages": {
+    "completions": "Completions",
+    "classifications": "Classifications",
+    "fine-tune": "Fine-Tune Model",
+    "search": "Search"
+  }
+}

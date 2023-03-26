@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+@import "react-toastify/dist/ReactToastify.css";
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+
+@tailwind base;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+details summary {
+  @apply font-title text-base;
+  @apply pl-5 relative w-full cursor-pointer;
+}
+details summary:after {
+  content: "+";
+  @apply font-semibold text-2xl;
+  @apply absolute left-0 -top-1;
+  @apply transition-transform;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+}
+details[open] summary ~ * {
+  animation: details-open-close 0.3s ease-in-out;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+@keyframes details-open-close {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

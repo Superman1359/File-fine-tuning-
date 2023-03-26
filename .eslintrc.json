@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@next/next/core-web-vitals",
+    "plugin:@next/next/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:mdx/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "overrides": [{ "files": "*.mdx", "parser": "eslint-mdx" }],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": { "version": "detect" }
+  }
+}

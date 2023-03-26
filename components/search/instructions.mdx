@@ -1,0 +1,10 @@
+To search against more than 200 documents, upload a file containing the documents to search through.
+
+The file can be CSV, Excel, or JSONL. It must contain a column with the name "text", and may also include the column "metadata". For Excel files, only the first column is considered. [More details](https://beta.openai.com/docs/guides/search)
+
+For example:
+
+```
+{"text": "puppy A is happy", "metadata": "emotional state of puppy A"}
+{"text": "puppy B is sad", "metadata": "emotional state of puppy B"}
+```

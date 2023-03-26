@@ -1,0 +1,8 @@
+
+*.code-workspace
+.next
+.vscode
+node_modules
+tsconfig.tsbuildinfo
+.sentryclirc
+sentry.properties
